@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="container" *ngFor="let anime of animes">
+    <div class="container" *ngFor="let anime of animes" (click)="selectAnime(anime)">
       <div class="card">
         <img
           class="card-img-top"
@@ -22,6 +22,9 @@
           <h2>{{anime.categorie}}</h2>
         </div>
       </div>
+    </div>
+    <div class="col-md-6" *ngIf="selectedAnime">
+      <app-anime-detail [anime]="selectedAnime"></app-anime-detail>
     </div>
   </div>
 </div>

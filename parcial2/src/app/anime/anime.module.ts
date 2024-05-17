@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 import { AnimeComponent } from './anime.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AnimeListComponent } from './anime-list/anime-list.component';
+import { AnimeDetailComponent } from './anime-detail/anime-detail.component';
 
 @NgModule({
   imports: [
     CommonModule,
     HttpClientModule
   ],
-  exports: [AnimeListComponent],
-  declarations: [AnimeListComponent]
+  exports: [AnimeListComponent, AnimeDetailComponent],
+  declarations: [AnimeListComponent, AnimeDetailComponent]
 })
 export class AnimeModule { }
