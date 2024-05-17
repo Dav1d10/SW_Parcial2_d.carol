@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="container1">
+    <div class="row1">
+      <div class="col">
+        <span class="col-12">
+          <img src="assets/images/anime Logo.png" class="imagen" />
+          <h1 class="title">Animes</h1>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container" *ngFor="let anime of animes">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="{{anime.img}}"
+          alt="{{anime.name}}"
+        />
+        <div class="card-body">
+          <h1>{{anime.Rating}}</h1>
+          <h2>{{anime.categorie}}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

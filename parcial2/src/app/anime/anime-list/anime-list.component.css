@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .container .card {
+    width: 200px; 
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .container .card-body {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .container .card-body h1,
+  .container .card-body h2 {
+    margin: 5px 0;
+  }
+  
